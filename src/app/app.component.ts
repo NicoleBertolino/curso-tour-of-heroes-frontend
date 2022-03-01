@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Tour of Heroes minha mãe.';
+ public title: string = 'Tour of Heroes minha mãe.';
+ public teste: string = 'Batatinha 1, 2, 3';
 }
