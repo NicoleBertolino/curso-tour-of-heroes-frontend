@@ -1,4 +1,4 @@
-<mat-accordion *ngIf="messageService.getMessages().length">
+<mat-accordion *ngIf= "messageService.getMessages().length" >
   <mat-expansion-panel expanded="true">
     <mat-expansion-panel-header>
       <mat-panel-title>
@@ -9,7 +9,7 @@
       </mat-panel-description>
     </mat-expansion-panel-header>
 
-      <div *ngFor="let message of messageService.getMessages()">
+      <div *ngFor= "let message of messageService.getMessages()" >
         {{ message }}
       </div>
       <p></p>

@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class MessageService {
   private messages: string[] = [];
 
+  //metodo para pegar as mensagens
   getMessages(): string[]{
     return this.messages;
   }
