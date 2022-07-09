@@ -2,10 +2,9 @@
 <!--ngfor: for: pega os heroes do component dashboard e passa para o hero: Heroes -->
 <div
   fxLayout = "row" fxLayoutGap = "12px" fxLayoutAlign = "space-between" fxLayout.xs="column">
-  <mat-card *ngFor= "let hero of heroes" >
+  <mat-card class= "pointer" *ngFor= "let hero of heroes" routerLink="/heroes/{{ hero.id }}">
     <mat-card-header>
       <mat-card-title>{{ hero.name }}</mat-card-title>
-      <mat-card-subtitle>{{ hero.id }}</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src= "{{hero.icon}}" alt="Photo of a Shiba Inu">
   </mat-card>
