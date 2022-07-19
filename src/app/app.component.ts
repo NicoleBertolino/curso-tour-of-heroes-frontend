@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuItem } from './core/models/menu-item.model';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- public title: string = 'Tour of Heroes.';
- public teste: string = 'Batatinha 1, 2, 3';
+ public title: string = 'Tour of Heroes';
+ menuItems: MenuItem[] = [
+  {
+    icon: 'dashboard',
+    routerLink: '/dashboard',
+    toolTipText: 'Dashboard'
+  },
+  {
+    icon: 'sports_martial_arts',
+    routerLink: '/heroes',
+    toolTipText: 'Heroes'
+  }
+
+]
 }

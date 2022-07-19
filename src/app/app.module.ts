@@ -6,11 +6,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroesComponent } from './heroes/heroes.component';
-import { MaterialModule } from './material/material.module';
-import { MessagesComponent } from './messages/messages.component';
 
 
 @NgModule({
@@ -18,7 +17,6 @@ import { MessagesComponent } from './messages/messages.component';
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-      MessagesComponent,
       DashboardComponent
    ],
   imports: [
@@ -26,8 +24,9 @@ import { MessagesComponent } from './messages/messages.component';
     FormsModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    AppRoutingModule,
-    MaterialModule
+
+    CoreModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

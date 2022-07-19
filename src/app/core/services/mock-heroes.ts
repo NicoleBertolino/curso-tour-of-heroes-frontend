@@ -1,4 +1,4 @@
-import { Heroes } from './hero.model';
+import { Heroes } from '../models/hero.model';
 
 export const HEROES: Heroes[] =[
 {id: 1, name: 'Pantera Negra', icon: "https://johto.legiaodosherois.com.br/wp-content/uploads/2013/07/art02.jpg"},
